@@ -1,23 +1,56 @@
 <!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>우리 반 과학 실험실</title>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>보일 법칙 실험 데이터 분석기</title>
 <style>
-:root{font-family:'Pretendard','Malgun Gothic',system-ui,sans-serif;color:#19334e;background:#edf7ff}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(160deg,#e4f4ff,#f6fbff 60%,#e9f7f4)}.wrap{max-width:950px;margin:auto;padding:40px 20px 60px}header{text-align:center;padding:36px 16px 28px}.symbol{font-size:44px}h1{font-size:clamp(29px,5vw,43px);margin:10px 0;color:#164e82}header p{color:#59738c;line-height:1.6;margin:0}.eyebrow{font-size:13px;letter-spacing:.14em;color:#3974a6;font-weight:800}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:25px}.card{background:#fff;border:1px solid #d8e9f4;border-radius:22px;padding:25px 21px;box-shadow:0 12px 30px #28517a10;display:flex;flex-direction:column;min-height:270px;transition:transform .2s,box-shadow .2s;text-decoration:none;color:inherit}.card.active:hover,.card.active:focus-visible{transform:translateY(-5px);box-shadow:0 18px 35px #28517a25;outline:2px solid #84bdf3;outline-offset:2px}.ico{width:65px;height:65px;display:grid;place-items:center;border-radius:18px;font-size:33px;margin-bottom:19px}.blue{background:#e0f0ff}.green{background:#dcf8ec}.purple{background:#f0e6ff}.card h2{font-size:21px;line-height:1.4;margin:0 0 11px}.card p{color:#647b90;font-size:15px;line-height:1.65;margin:0 0 20px;flex:1}.status{align-self:flex-start;font-size:13px;font-weight:800;padding:9px 13px;border-radius:99px;background:#e7f4ff;color:#1768a3}.ready{background:#e2f8eb;color:#13754a}.soon{background:#f0f2f5;color:#7b8795}.card.disabled{opacity:.8;cursor:default}.notice{margin:29px auto 0;max-width:650px;background:#ffffffb8;border:1px solid #dcebf6;border-radius:16px;padding:16px 20px;text-align:center;color:#547089;font-size:14px;line-height:1.65}footer{text-align:center;margin-top:40px;font-size:13px;color:#8499aa}@media(max-width:700px){.wrap{padding:20px 16px 40px}.cards{grid-template-columns:1fr}.card{min-height:0;padding:22px}.card p{margin-bottom:17px}header{padding:25px 8px 14px}}
-</style>
-</head>
-<body>
-<main class="wrap">
-<header><div class="symbol" aria-hidden="true">🔬</div><div class="eyebrow">SCIENCE LEARNING LAB</div><h1>우리 반 과학 실험실</h1><p>궁금한 과학을 직접 실험하고 탐구해 보세요!</p></header>
-<section class="cards" aria-label="과학 학습 활동">
-<article class="card disabled" aria-label="보일 법칙 OX 퀴즈 준비 중"><div class="ico blue" aria-hidden="true">❓</div><h2>보일 법칙 OX 퀴즈</h2><p>압력과 부피의 관계를 재미있는 퀴즈로 확인해요.</p><span class="status soon">준비 중</span></article>
-<a class="card active" href="https://hisciency.github.io/science_gas_simulation/" target="_blank" rel="noopener noreferrer" aria-label="기체 입자 운동 시뮬레이션 열기 (새 탭)"><div class="ico green" aria-hidden="true">⚛️</div><h2>기체 입자 운동 시뮬레이션</h2><p>기체 입자의 움직임을 관찰하고 온도와 입자 수를 조절해 보세요.</p><span class="status ready">실험 시작 ↗</span></a>
-<article class="card disabled" aria-label="힘과 운동 게임 준비 중"><div class="ico purple" aria-hidden="true">🎮</div><h2>힘과 운동 게임</h2><p>힘이 물체의 운동에 미치는 영향을 게임으로 탐구해요.</p><span class="status soon">준비 중</span></article>
-<a class="card active" href="https://hisciency.github.io/boyle_data_analysis" target="_blank" rel="noopener noreferrer" aria-label="보일 법칙 실험 데이터 분석기 열기 (새 탭)"><div class="ico blue" aria-hidden="true">📈</div><h2>보일 법칙 실험 데이터 분석기</h2><p>실험 데이터를 입력하고 그래프를 분석해요.</p><span class="status ready">실험 시작 ↗</span></a>
-</section>
-<div class="notice">💡 <strong>학습 안내</strong> · '실험 시작'을 누르면 새로운 탭에서 시뮬레이션이 열립니다. 준비 중인 활동은 완성되는 대로 추가할 예정입니다.</div>
-<footer>우리 반 과학 실험실 · 중학교 과학 학습 활동</footer>
-</main>
-</body>
-</html>
+:root{font-family:'Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;color:#183d59;background:#e8f6ff}*{box-sizing:border-box}body{margin:0;padding:24px 14px}.wrap{max-width:1020px;margin:auto}header{text-align:center;margin:8px 0 25px}h1{font-size:clamp(1.55rem,4vw,2.35rem);color:#12528c;margin:0 0 10px}.subtitle{font-size:1.04rem;color:#4b718c}.card{background:#fff;border-radius:22px;box-shadow:0 8px 26px #12528c15;padding:clamp(18px,3vw,30px);margin:18px 0}h2{margin:0 0 18px;color:#12528c;font-size:1.3rem}.form{display:grid;grid-template-columns:1fr 1fr auto;gap:14px;align-items:end}label{display:block;font-weight:700;margin-bottom:7px}input{width:100%;min-height:54px;padding:10px 13px;border:2px solid #bad9ed;border-radius:12px;font-size:1.15rem;color:#153d5e;background:#fff}input:focus{outline:3px solid #b9e6ff;border-color:#2487d3}button{border:0;border-radius:12px;min-height:54px;padding:12px 22px;background:#187bc5;color:white;font-weight:800;font-size:1.04rem;cursor:pointer;touch-action:manipulation}button:hover{background:#0d619f}button:focus-visible{outline:3px solid #e4a83a;outline-offset:3px}.danger{background:#b64d57}.danger:hover{background:#92333e}.small{font-size:.95rem;padding:9px 14px;min-height:42px}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.muted{color:#55748b}.error{min-height:24px;color:#b72e38;font-weight:700;margin-top:9px}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:600px;font-size:1.04rem}th,td{padding:13px 10px;text-align:center;border-bottom:1px solid #d9eaf3}th{background:#edf7ff;color:#164f7a}tr:last-child td{border-bottom:0}.graph-wrap{width:100%;overflow:hidden}svg{display:block;width:100%;height:auto;touch-action:pan-y}svg text{font-family:inherit;fill:#3a5d75}.note{font-size:.93rem;color:#526f84;margin:10px 0 0}.questions{padding-left:25px;line-height:1.9;font-size:1.07rem}.questions li{padding:5px 0}.empty{padding:18px;text-align:center;color:#6a7f8c}@media(max-width:650px){body{padding:12px}.form{grid-template-columns:1fr 1fr}.form button{grid-column:1/-1}button{font-size:1rem}h2{font-size:1.18rem}.card{border-radius:17px}.questions{font-size:1rem}}
+textarea{width:100%;min-height:105px;resize:vertical;padding:13px;border:2px solid #bad9ed;border-radius:12px;font:inherit;font-size:1.05rem;color:#153d5e}textarea:focus{outline:3px solid #b9e6ff;border-color:#2487d3}.analysis-item{margin:0 0 20px}.analysis-item label{line-height:1.6}.actions{display:flex;flex-wrap:wrap;gap:12px}.report{display:none}.report.visible{display:block}.report h3{color:#12528c}.report-answer{white-space:pre-wrap;overflow-wrap:anywhere;min-height:45px;padding:13px;background:#f2f8fd;border-radius:10px}.report table{min-width:0}.report td,.report th{overflow-wrap:anywhere}.report .table-wrap{overflow-x:auto}@media print{@page{size:A4;margin:14mm}body{padding:0;background:white;color:black}.wrap{max-width:none}header,.card{display:none!important}.report.visible{display:block!important;box-shadow:none;margin:0;padding:0}.report .print-hide{display:none!important}.report h2{font-size:20pt}.report h3{font-size:12pt;break-after:avoid}.report-answer{background:white;border:1px solid #ccc;break-inside:avoid}.report table{font-size:10pt}.report th,.report td{padding:8px 5px}.report section{break-inside:avoid}.report .table-wrap{overflow:visible}}
+</style></head><body><main class="wrap"><header><h1>🔬 보일 법칙 실험 데이터 분석기</h1><div class="subtitle">실험에서 측정한 압력과 부피를 입력하고 그래프를 분석해 보세요.</div></header>
+<section class="card"><h2>① 실험 데이터 입력</h2><form id="dataForm" class="form" novalidate><div><label for="pressure">압력 (kPa)</label><input id="pressure" type="number" min="0" step="any" inputmode="decimal" placeholder="예: 100" required></div><div><label for="volume">부피 (mL)</label><input id="volume" type="number" min="0" step="any" inputmode="decimal" placeholder="예: 60" required></div><button type="submit">＋ 데이터 추가</button></form><div id="error" class="error" role="alert" aria-live="polite"></div></section>
+<section class="card"><div class="toolbar"><h2>② 실험 데이터 표</h2><button id="reset" class="danger" type="button">전체 초기화</button></div><div class="table-wrap"><table><thead><tr><th>번호</th><th>압력 (kPa)</th><th>부피 (mL)</th><th>압력 × 부피 (kPa·mL)</th><th>삭제</th></tr></thead><tbody id="rows"></tbody></table></div><p class="note">입력한 실험값은 수정하지 않고 그대로 표시합니다. 압력 × 부피는 입력값으로 계산합니다.</p></section>
+<section class="card"><h2>③ 압력–부피 그래프</h2><div class="graph-wrap"><svg id="plot" viewBox="0 0 900 530" role="img" aria-label="가로축 압력, 세로축 부피인 실험 데이터 선 그래프"></svg></div><p class="note">두 축은 0부터 시작하는 선형 눈금입니다. 점은 측정값이며, 압력이 작은 순서대로 선으로 연결됩니다. 같은 압력의 서로 다른 측정값도 모두 표시합니다.</p></section>
+<section class="card" id="analysis"><h2>④ 실험 결과 분석하기</h2>
+<div class="analysis-item"><label for="answer1">1. 압력이 증가할수록 기체의 부피는 어떻게 변하는가?</label><textarea id="answer1" placeholder="실험 결과를 관찰하고 자신의 생각을 적어 보세요."></textarea></div>
+<div class="analysis-item"><label for="answer2">2. 압력이 2배가 될 때 부피는 어떻게 변하는가?</label><textarea id="answer2" placeholder="표에서 압력이 2배인 측정값을 찾아 비교해 보세요."></textarea></div>
+<div class="analysis-item"><label for="answer3">3. 압력과 부피를 곱한 값은 어떤 특징이 있는가?</label><textarea id="answer3" placeholder="압력 × 부피 열의 값을 비교해 보세요."></textarea></div>
+<p class="note">보일 법칙은 온도와 기체의 양이 일정할 때 성립합니다. 실험값은 이론값으로 보정하지 않습니다.</p>
+<button id="summarize" type="button">📋 분석 결과 정리하기</button></section>
+<section class="card report" id="report" aria-live="polite"><h2>보일 법칙 실험 결과 정리</h2><h3>1. 실험 데이터</h3><div class="table-wrap"><table><thead><tr><th>번호</th><th>압력 (kPa)</th><th>부피 (mL)</th><th>압력 × 부피 (kPa·mL)</th></tr></thead><tbody id="reportRows"></tbody></table></div><h3>2. 실험 결과 분석</h3><div id="reportAnswers"></div><div class="actions print-hide"><button id="printReport" type="button">🖨️ 인쇄 / PDF 저장</button><button id="closeReport" type="button" class="danger">정리 화면 닫기</button></div><p class="note print-hide">인쇄 창에서 프린터를 선택하거나 ‘PDF로 저장’을 선택하세요.</p></section></main>
+<script>
+'use strict';
+const example=[{p:100,v:60,ps:'100',vs:'60'},{p:150,v:40,ps:'150',vs:'40'},{p:200,v:30,ps:'200',vs:'30'}];
+let data=example.map((d,i)=>({...d,id:i+1}));let nextId=4;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function product(p,v){const n=p*v;return Number.isFinite(n)?Number(n.toPrecision(12)).toString():'계산 범위 초과';}
+function renderTable(){const tbody=$('rows');tbody.innerHTML='';if(!data.length){tbody.innerHTML='<tr><td colspan="5" class="empty">데이터가 없습니다. 위에서 실험값을 추가해 보세요.</td></tr>';return;}
+ data.forEach((d,i)=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${i+1}</td><td>${esc(d.ps)}</td><td>${esc(d.vs)}</td><td>${esc(product(d.p,d.v))}</td><td><button class="danger small" type="button" aria-label="${i+1}번 데이터 삭제">삭제</button></td>`;tr.querySelector('button').addEventListener('click',()=>{data=data.filter(x=>x.id!==d.id);render();});tbody.appendChild(tr);});}
+function niceStep(max){if(max<=0)return 1;const rough=max/5,mag=10**Math.floor(Math.log10(rough)),n=rough/mag;return (n<=1?1:n<=2?2:n<=5?5:10)*mag;}
+function renderGraph(){const svg=$('plot');const NS='http://www.w3.org/2000/svg';svg.replaceChildren();const W=900,H=530,L=96,R=35,T=35,B=83,pw=W-L-R,ph=H-T-B;
+ const add=(tag,attrs,txt)=>{const e=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs||{}))e.setAttribute(k,String(v));if(txt!==undefined)e.textContent=txt;svg.appendChild(e);return e;};
+ const maxP=Math.max(1,...data.map(d=>d.p)),maxV=Math.max(1,...data.map(d=>d.v));const sp=niceStep(maxP),sv=niceStep(maxV);const xp=Math.ceil(maxP/sp)*sp,yp=Math.ceil(maxV/sv)*sv;const x=p=>L+(p/xp)*pw,y=v=>T+ph-(v/yp)*ph;
+ for(let i=0;i<=Math.round(xp/sp);i++){const val=i*sp,px=x(val);add('line',{x1:px,y1:T,x2:px,y2:T+ph,stroke:'#e4edf4','stroke-width':1});add('text',{x:px,y:T+ph+26,'text-anchor':'middle','font-size':17},Number(val.toPrecision(10)).toString());}
+ for(let i=0;i<=Math.round(yp/sv);i++){const val=i*sv,py=y(val);add('line',{x1:L,y1:py,x2:L+pw,y2:py,stroke:'#e4edf4','stroke-width':1});add('text',{x:L-15,y:py+6,'text-anchor':'end','font-size':17},Number(val.toPrecision(10)).toString());}
+ add('line',{x1:L,y1:T,x2:L,y2:T+ph,stroke:'#53758c','stroke-width':2});add('line',{x1:L,y1:T+ph,x2:L+pw,y2:T+ph,stroke:'#53758c','stroke-width':2});add('text',{x:L+pw/2,y:H-15,'text-anchor':'middle','font-size':22,'font-weight':'bold'},'압력 (kPa)');add('text',{x:24,y:T+ph/2,'text-anchor':'middle','font-size':22,'font-weight':'bold',transform:`rotate(-90 24 ${T+ph/2})`},'부피 (mL)');
+ const sorted=[...data].sort((a,b)=>a.p-b.p||a.id-b.id);if(sorted.length>1)add('polyline',{points:sorted.map(d=>`${x(d.p)},${y(d.v)}`).join(' '),fill:'none',stroke:'#2085d2','stroke-width':3,'stroke-linejoin':'round','stroke-linecap':'round'});
+ for(const d of sorted){const dot=add('circle',{cx:x(d.p),cy:y(d.v),r:7,fill:'#157bc7',stroke:'white','stroke-width':2});const title=document.createElementNS(NS,'title');title.textContent=`압력 ${d.ps} kPa, 부피 ${d.vs} mL`;dot.appendChild(title);}
+ if(!data.length)add('text',{x:W/2,y:H/2,'text-anchor':'middle','font-size':22,fill:'#67849a'},'데이터를 입력하면 그래프가 나타납니다.');}
+function render(){renderTable();renderGraph();}
+$('dataForm').addEventListener('submit',e=>{e.preventDefault();const pi=$('pressure'),vi=$('volume'),ps=pi.value.trim(),vs=vi.value.trim(),p=Number(ps),v=Number(vs);if(!ps||!vs||!Number.isFinite(p)||!Number.isFinite(v)||p<=0||v<=0||!Number.isFinite(p*v)){$('error').textContent='압력과 부피에 0보다 큰 유효한 숫자를 입력해 주세요.';return;}data.push({id:nextId++,p,v,ps,vs});$('error').textContent='';pi.value='';vi.value='';render();pi.focus();});
+$('reset').addEventListener('click',()=>{if(!data.length)return;if(confirm('모든 실험 데이터를 삭제할까요?')){data=[];$('error').textContent='';render();}});
+const prompts=[
+ '압력이 증가할수록 기체의 부피는 어떻게 변하는가?',
+ '압력이 2배가 될 때 부피는 어떻게 변하는가?',
+ '압력과 부피를 곱한 값은 어떤 특징이 있는가?'
+];
+function summarize(){
+ const body=$('reportRows');body.replaceChildren();
+ if(!data.length){const tr=document.createElement('tr');const td=document.createElement('td');td.colSpan=4;td.textContent='입력된 실험 데이터가 없습니다.';tr.appendChild(td);body.appendChild(tr);}
+ data.forEach((d,i)=>{const tr=document.createElement('tr');[i+1,d.ps,d.vs,product(d.p,d.v)].forEach(value=>{const td=document.createElement('td');td.textContent=value;tr.appendChild(td);});body.appendChild(tr);});
+ const area=$('reportAnswers');area.replaceChildren();
+ prompts.forEach((prompt,i)=>{const section=document.createElement('section');const h=document.createElement('h3');h.textContent=`${i+1}. ${prompt}`;const p=document.createElement('div');p.className='report-answer';p.textContent=$(`answer${i+1}`).value.trim()||'(작성한 답변 없음)';section.append(h,p);area.appendChild(section);});
+ $('report').classList.add('visible');$('report').scrollIntoView({behavior:'smooth',block:'start'});
+}
+$('summarize').addEventListener('click',summarize);
+$('printReport').addEventListener('click',()=>window.print());
+$('closeReport').addEventListener('click',()=>{$('report').classList.remove('visible');$('analysis').scrollIntoView({behavior:'smooth'});});
+render();
+</script></body></html>
